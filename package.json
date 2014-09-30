@@ -1,0 +1,27 @@
+{
+  "name": "aj",
+  "version": "1.0.0",
+  "description": "Command to add .jshintrc",
+  "engine": {
+    "node": ">=0.6.x"
+  },
+  "bin": {
+    "aj": "./bin/aj"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/madhums/aj.git"
+  },
+  "keywords": [
+    "jshintrc",
+    "jshint"
+  ],
+  "author": "Madhusudhan <madhums8@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/madhums/aj/issues"
+  },
+  "homepage": "https://github.com/madhums/aj",
+  "dependencies": {
+  }
+}

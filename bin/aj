@@ -1,0 +1,48 @@
+#!/usr/bin/env node
+
+/*!
+ * aj (add .jshintrc)
+ * Copyright(c) 2014 Madhusudhan Srinivasa <madhums8@gmail.com>
+ * MIT Licensed
+ */
+
+var fs = require('fs');
+var os = require('os');
+var jshintrc = JSON.stringify({
+  "bitwise": false,
+  "immed": true,
+  "newcap": true,
+  "noarg": true,
+  "noempty": true,
+  "nonew": true,
+  "trailing": true,
+  "boss": true,
+  "eqnull": true,
+  "expr": true,
+  "globalstrict": true,
+  "laxbreak": true,
+  "loopfunc": true,
+  "sub": true,
+  "undef": true,
+  "eqeqeq": true,
+  "indent": 2,
+  "freeze": true,
+  "latedef": true,
+  "quotmark": "single",
+  "unused": true,
+  "maxparams": 7,
+  "maxdepth": 3,
+  "maxstatements": 20,
+  "maxlen": 100,
+  "curly": false,
+  "node": true,
+  "es5": true,
+  "esnext": true,
+  "globals": {}
+}, null, 2).concat(os.EOL);
+
+var dir = process.cwd();
+
+fs.writeFile(dir + '/.jshintrc', jshintrc, function (err) {
+  console.log('Added .jshintrc to ' + dir);
+});
