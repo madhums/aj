@@ -27,7 +27,7 @@ var jshintrc = JSON.stringify({
   "eqeqeq": true,
   "indent": 2,
   "freeze": true,
-  "latedef": true,
+  "latedef": false,
   "quotmark": "single",
   "unused": true,
   "maxparams": 7,
