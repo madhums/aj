@@ -36,7 +36,6 @@ var jshintrc = JSON.stringify({
   "maxlen": 80,
   "curly": false,
   "node": true,
-  "es5": true,
   "esnext": true,
   "globals": {}
 }, null, 2).concat(os.EOL);
